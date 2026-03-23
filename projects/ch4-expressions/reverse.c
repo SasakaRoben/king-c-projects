@@ -1,16 +1,10 @@
 #include <stdio.h>
 
 int main() {
-    int num, reversed = 0;
+    int d1, d2, d3;
     printf("Enter an 3-digit integer: ");
-    scanf("%d", &num);
+    scanf("%1d%1d%1d", &d1, &d2, &d3);
 
-    reversed = (num % 10) * 100;
-    num /= 10;
-    reversed += (num % 10) * 10;
-    num /= 10;
-    reversed += num % 10;
-    
-    printf("Reversed number: %d\n", reversed);
+    printf("Reversed number: %d%d%d\n", d3, d2, d1);
     return 0;
 }
